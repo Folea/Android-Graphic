@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:background="@color/graphic_background">
+	
+    
+    <com.androidplot.xy.XYPlot
+            android:id="@+id/mySimpleXYPlot"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            androidPlot.title="DNNAnalytics"
+            android:layout_above="@+id/pickDate"/>
+    
+   <!-- <com.xepient.dnnanalytics.DnnAnalyticsView
+       android:id="@+id/graphicView"
+       android:layout_width="match_parent"
+       android:layout_height="fill_parent"
+       android:layout_above="@+id/pickDate"
+       android:background="@color/graphic_background"/>-->
+	
+	<TextView 
+	    android:id="@+id/StartDateText"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/start_date"
+	    android:layout_below="@+id/mySimpleXYPlot"
+	    android:textSize="25sp"
+	    android:layout_alignParentLeft="true"/>
+	<TextView 
+	    android:id="@+id/StartPickDate"
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:layout_toLeftOf="@+id/pickDate"
+	    android:layout_below="@+id/mySimpleXYPlot"
+	    android:layout_above="@+id/pickDate1"
+	    android:textSize="25sp"
+	    />
+	<ImageButton
+	    android:id="@+id/pickDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pickDate1"
+        android:src="@drawable/ic_calendar"
+        android:layout_alignParentRight="true"
+        />
+	
+	<TextView 
+	    android:id="@+id/EndDateText"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/end_date"
+	    android:layout_alignParentLeft="true"
+		android:layout_alignBaseline="@+id/EndPickDate"
+	    android:textSize="25sp"/>
+	
+	<TextView 
+	    android:id="@+id/EndPickDate"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_toLeftOf="@+id/pickDate1"
+	    android:layout_below="@+id/StartPickDate"
+	    android:layout_above="@+id/pickDate1"
+	    android:textSize="25sp"
+	    />
+	
+	<ImageButton
+	    android:id="@+id/pickDate1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_calendar"
+        android:layout_alignParentBottom="true"/>
+    
+</RelativeLayout>

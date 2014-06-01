@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="graphic_background" > #FFFFFF </color>
+    <color name="graphic_lines" > #52A2ED </color>
+    <color name="graphic_axe_lines" > #000000 </color>
+    <color name="text_color" > #000000 </color>
+    <color name="button_background" > #FFFFFF </color>
+    <color name="limit_color"> #EEEEEE </color>
+    <color name="graphic_text_color"> #B3B3B3 </color>
+</resources>
